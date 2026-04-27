@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fbfbfd;
+}
+
+@theme {
+  --color-zul-claro: #0451f3;
+}
+
+body {
+  background: var(--background);
+}
