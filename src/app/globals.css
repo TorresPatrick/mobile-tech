@@ -5,7 +5,8 @@
 }
 
 @theme {
-  --color-zul-claro: #0451f3;
+  --color-bg-header: #000c1a;
+  --color-azul-claro: #0451f3;
 }
 
 body {

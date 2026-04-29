@@ -5,4 +5,7 @@ type MenuState = {
   toggleMenu: () => void;
 };
 
-export const useMenuHamburger = create<MenuState>();
+export const useMenuHamburger = create<MenuState>((set) => ({
+  isOpen: false,
+  toggleMenu: () => set((state) => ({ isOpen: !state.isOpen })),
+}));

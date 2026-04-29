@@ -5,7 +5,7 @@ import { Logo } from "./components/Logo";
 
 export function Header() {
   return (
-    <header className="bg-[#000c1a] text-white">
+    <header className="bg-bg-header text-white">
       <div className="flex items-center mx-2 p-3 justify-between ">
         <div className="flex items-center">
           <MenuHamburger />
@@ -13,7 +13,7 @@ export function Header() {
         </div>
 
         <div className="flex text-2xl gap-3">
-          <IoSearch />
+          <IoSearch className="hidden" />
           <div className="flex realtive">
             <span className="bg-[#0554fc] text-white text-sm rounded-full w-5 h-5 absolute top-5 right-3 flex justify-center items-center">
               0
