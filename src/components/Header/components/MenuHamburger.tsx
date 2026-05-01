@@ -16,11 +16,11 @@ export function MenuHamburger() {
       {useMenu.isOpen && (
         <div
           onClick={() => useMenu.toggleMenu()}
-          className="fixed w-full h-screen bg-black/25 left-0 top-0"
+          className="fixed w-full h-screen bg-black/25 left-0 top-0 z-50"
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="absolute left-0 top-0 w-1/3 h-screen py-12 px-6 overflow-y-scroll bg-bg-header flex items-center flex-col "
+            className="absolute left-0 top-0 w-1/3 h-screen py-12 px-6 overflow-y-auto bg-bg-header flex items-center flex-col z-50"
           >
             <GiSmartphone className="text-5xl text-zul-claro mx-3" />
             <h1 className="text-xl font-bold">
@@ -32,7 +32,7 @@ export function MenuHamburger() {
               </Link>
               <Link href="#">
                 <h2 className="font-bold text-md">
-                  Sobre <span className="text-zul-claro">a Loja</span>
+                  Sobre <span className="text-azul-claro">a Loja</span>
                 </h2>
               </Link>
               <Link href="#">
