@@ -30,8 +30,17 @@ export function Header() {
         </div>
 
         <div className="flex text-2xl gap-3">
-          <IoSearch className="hidden lg:block lg:mr-2" />
-          <div className="flex realtive">
+          <div className="hidden lg:block lg:mr-2">
+            <label className="flex items-center">
+              <input
+                className="border border-[#323540] relative rounded-xl text-sm px-3 py-3 w-75"
+                placeholder="Pesquisar produtos..."
+              />
+              <IoSearch className="absolute right-19" />
+            </label>
+          </div>
+
+          <div className="flex realtive items-center">
             <span className="bg-[#0554fc] text-white text-sm rounded-full w-5 h-5 absolute top-5 right-3 flex justify-center items-center">
               0
             </span>
